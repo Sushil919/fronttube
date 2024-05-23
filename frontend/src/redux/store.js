@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-
-import {
-  useDispatch as useAppDispatch,
-  useSelector as useAppSelector,
+import { 
+  useDispatch as useAppDispatch, useSelector as useAppSelector 
 } from "react-redux";
-import { rootReducer } from "./rootReducer";
+import {rootReducer} from "./rootReducer"; // Ensure you have a rootReducer file
 
 const store = configureStore({
   reducer: rootReducer,
